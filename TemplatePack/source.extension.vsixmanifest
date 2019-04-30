@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="94424697-3C6B-495F-BDFC-95F291A955AC" Version="2019.4.29" Language="en-US" Publisher="Afonso Dutra Nogueira Filho" />
+        <Identity Id="944F4697-3C6B-F95F-BDFC-95F2A1A955AC" Version="2019.4.30" Language="en-US" Publisher="Afonso Dutra Nogueira Filho" />
         <DisplayName>Afonsoft WebApplication Template</DisplayName>
         <Description xml:space="preserve">Template padrão para aplicação WebForm - Já vem com o jQuery 3.3.1, jQuery UI 1.12.1, Bootstrap 4.3.1, Google Material Icons, jqueryui-bootstrap-adapter, glyphicons, fontawesome, modernizr, animate.css, bootbox.js, FlatLab Theme, many jquery plugin</Description>
         <MoreInfo>https://www.afonsoft.com.br</MoreInfo>

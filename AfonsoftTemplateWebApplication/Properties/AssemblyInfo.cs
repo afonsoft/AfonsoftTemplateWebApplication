@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("AfonsoftTemplateWebApplication")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Templete WebFoms")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Afonsoft")]
 [assembly: AssemblyProduct("AfonsoftTemplateWebApplication")]
@@ -21,7 +21,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("0be56124-463b-45e0-9670-4719faa2ea46")]
+[assembly: Guid("0ba56124-463b-45f0-9670-4719faa2fa46")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -32,7 +32,7 @@ using System.Runtime.InteropServices;
 //
 // You can specify all the values or you can default the Revision and Build Numbers 
 // by using the '*' as shown below:
-[assembly: AssemblyVersion("2019.4.28.*")]
-[assembly: AssemblyFileVersion("2019.4.28")]
+[assembly: AssemblyVersion("2019.4.30.*")]
+[assembly: AssemblyFileVersion("2019.4.30")]
 [assembly: NeutralResourcesLanguage("pt-BR")]
 

@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TemplatePackPropsFilePath Condition=" '$(TemplatePackPropsFilePath)'=='' ">$(MSBuildThisFileFullPath).props</TemplatePackPropsFilePath>
+  </PropertyGroup>
+
+  <Import Project="$(TemplatePackPropsFilePath)"
+          Condition=" '$(TemplatePackPropsFilePath)' != '' and Exists('$(TemplatePackPropsFilePath)') " />
+
+  <PropertyGroup Label="TemplatePackInfo">
+    <Authors>Afonso Dutra Nogueira Filho</Authors>
+    <Description>Template padrão para aplicação WebForm - Já vem com o jQuery 3.3.1, jQuery UI 1.12.1, Bootstrap 4.3.1, Google Material Icons, jqueryui-bootstrap-adapter, glyphicons, fontawesome, modernizr, animate.css, bootbox.js, FlatLab Theme, many jquery plugin</Description>
+    <Version>2018.10.23</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Label="PackageConfiguration">
+    <TargetFramework>netstandard1.0</TargetFramework>
+    <PackageType>Template</PackageType>
+    <TemplateSourceRoot>$(MSBuildThisFileDirectory)</TemplateSourceRoot>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <ExcludeFromPackage Include="$(TemplateSourceRoot)**/bin/**/*" />
+    <ExcludeFromPackage Include="$(TemplateSourceRoot)**/obj/**/*" />
+    <ExcludeFromPackage Include="$(TemplateSourceRoot)**/*.user" />
+    <ExcludeFromPackage Include="$(TemplateSourceRoot)**/*.suo" />
+    <ExcludeFromPackage Include="$(TemplateSourceRoot)**/.vs/**/*" />
+    <ExcludeFromPackage Include="$(TemplateSourceRoot)**/.git/**/*" />
+    <ExcludeFromPackage Include="$(TemplateSourceRoot)**/packages/**/*" />
+
+    <TemplateFiles  Include="$(TemplateSourceRoot)/**/*" 
+                    Exclude="@(ExcludeFromPackage)" />
+  </ItemGroup>
+
+  <PropertyGroup Label="BuildConfiguration">
+    <NoBuild>True</NoBuild>
+    <IncludeBuildOutput>False</IncludeBuildOutput>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <DisableImplicitFrameworkReferences>True</DisableImplicitFrameworkReferences>
+    <PackProjectInputFile>$(MSBuildProjectFullPath)</PackProjectInputFile>
+    <PackageOutputPath>bin/$(Configuration)/templates/</PackageOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content  Include="@(TemplateFiles)" 
+              Exclude="@(ExcludeFromPackage)"
+              PackagePath="Content/%(RecursiveDir)%(Filename)%(Extension)" />
+  </ItemGroup>
+
+  <Target Name="GetNuGetPath" Outputs="@(NuGetPackOutput)">
+    <Message Text="NuGetPackOutput: [@(NuGetPackOutput)]" Importance="high"/>
+  </Target>
+  <Target Name="DebugInfo" BeforeTargets="Build;Pack">
+    <Message Text="Inner:TemplateSourceRoot: [$(TemplateSourceRoot)]" Importance="high"/>
+  </Target>
+  <!-- created with SideWaffle -->
+</Project>

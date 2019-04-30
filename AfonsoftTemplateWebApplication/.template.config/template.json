@@ -1,0 +1,23 @@
+{
+  "author": "Afonso Dutra Nogueira Filho",
+  "classifications": [],
+  "description": "Template padrão para aplicação WebForm - Já vem com o jQuery 3.3.1, jQuery UI 1.12.1, Bootstrap 4.3.1, Google Material Icons, jqueryui-bootstrap-adapter, glyphicons, fontawesome, modernizr, animate.css, bootbox.js ,FlatLab Theme, many jquery plugin",
+  "name": "Afonsoft WebApplication Template",
+  "defaultName": "PortalWebApplication",
+  "identity": "Afonsoft.Web.WebApplication",
+  "groupIdentity": "Afonsoft.Web",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "shortName": "AfonsoftTemplate",
+  "sourceName": "AfonsoftTemplateWebApplication",
+  "guids": [
+    "{0BE56124-463B-45E0-9670-4719FAA2EA46}"
+  ],
+  "primaryOutputs": [
+    {
+      "path": "AfonsoftTemplateWebApplication.csproj"
+    }
+  ]
+}

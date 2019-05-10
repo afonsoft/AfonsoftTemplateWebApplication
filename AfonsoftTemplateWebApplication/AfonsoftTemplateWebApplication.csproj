@@ -58,11 +58,11 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Afonsoft.Extensions, Version=2019.4.29.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Afonsoft.Extensions.2019.4.29\lib\net47\Afonsoft.Extensions.dll</HintPath>
+    <Reference Include="Afonsoft.Extensions, Version=2019.5.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Afonsoft.Extensions.2019.5.8\lib\net47\Afonsoft.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="Afonsoft.Logger, Version=2019.4.29.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Afonsoft.Logger.2019.4.29\lib\net47\Afonsoft.Logger.dll</HintPath>
+    <Reference Include="Afonsoft.Logger, Version=2019.5.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Afonsoft.Logger.2019.5.8\lib\net47\Afonsoft.Logger.dll</HintPath>
     </Reference>
     <Reference Include="Afonsoft.Web.Library, Version=2019.4.30.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Afonsoft.Web.Libary.2019.4.30\lib\net47\Afonsoft.Web.Library.dll</HintPath>
